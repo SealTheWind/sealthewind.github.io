@@ -10,6 +10,10 @@
 
     <!--Description-->
     
+        <meta name="description" content="Gallery title
+  
+      1">
+    
 
     <!--Author-->
     
@@ -49,8 +53,8 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" type="text/css" rel="stylesheet" />
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.css">
 
     <!-- Google Analytics -->
     
@@ -112,7 +116,6 @@
 
 <!-- Main Content -->
 <section class="main clearfix">
-
     <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151209-01.jpeg');">
         <div class="wrapper content_header clearfix">
             
@@ -139,34 +142,24 @@
 
             <!-- Gallery -->
             
-                
-<div class="gallery-container">
-    
-        
-            <div class="picture-container">
-                <a href="#" data-featherlight="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151209-01.jpeg">
-                    <img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151209-01.jpeg" class="img-thumbnail" />
-                </a>
-            </div>
-        
-            <div class="picture-container">
-                <a href="#" data-featherlight="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151534-01.jpeg">
-                    <img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151534-01.jpeg" class="img-thumbnail" />
-                </a>
-            </div>
-        
-            <div class="picture-container">
-                <a href="#" data-featherlight="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200921_183059-01.jpeg">
-                    <img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200921_183059-01.jpeg" class="img-thumbnail" />
-                </a>
-            </div>
-        
-    
-</div>
-            
+
 
             <!-- Content -->
-            
+            <div id="selector1" align="center">
+  <h2>Gallery title</h3>
+  <div class="item" data-src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151209-01.jpeg">
+      <img alt="1" src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151209-01.jpeg" style="width:50%"/>1
+  </div>
+<br/>
+  <div class="item" data-src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151534-01.jpeg">
+      <img alt="2" src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200922_151534-01.jpeg" style="width:50%"/>
+  </div>
+<br/>
+  <div class="item" data-src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200921_183059-01.jpeg">
+      <img alt="3" src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/photo/IMG_20200921_183059-01.jpeg" style="width:50%"/>
+  </div>
+</div>
+
 
             <!-- Tags -->
             
@@ -177,6 +170,48 @@
 </div>
 
 
+
+
+
+<!-- jQuery -->
+
+<script src="/js/jquery.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+
+<script src="/js/lightgallery.umd.js"></script>
+
+
+<script src="/js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
+<script src="/js/plugins/zoom/lg-zoom.umd.js"></script>
+
+
+<script src="/js/plugins/rotate/lg-rotate.umd.js"></script>
+
+<!-- 
+<script src="/js/plugins/pager/lg-pager.umd.js"></script>
+ -->
+
+<script src="/js/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+
+<!-- https://www.lightgalleryjs.com/docs/settings/  -->
+<script type="text/javascript">
+lightGallery(document.getElementById('selector1'), {
+    selector: '.item',
+    plugins: [lgZoom, lgThumbnail, lgRotate, lgFullscreen],
+    download: false,	//��ֹ����
+    mousewheel: true,   //������껻ҳ
+    Width: '1000px',
+});
+</script>
 
             <!-- Comments -->
             <div>
@@ -224,8 +259,6 @@
 
 
 <!-- Gallery -->
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Disqus Comments -->
 

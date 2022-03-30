@@ -58,8 +58,8 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" type="text/css" rel="stylesheet" />
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.css">
 
     <!-- Google Analytics -->
     
@@ -121,7 +121,6 @@
 
 <!-- Main Content -->
 <section class="main clearfix">
-
     <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/JP/18.jpg');">
         <div class="wrapper content_header clearfix">
             
@@ -148,6 +147,7 @@
 
             <!-- Gallery -->
             
+
 
             <!-- Content -->
             <p>近期去东京玩，体验了日式家居，逛了一些家居店                    </p>
@@ -292,6 +292,48 @@
 
 
 
+
+
+<!-- jQuery -->
+
+<script src="/js/jquery.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+
+<script src="/js/lightgallery.umd.js"></script>
+
+
+<script src="/js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
+<script src="/js/plugins/zoom/lg-zoom.umd.js"></script>
+
+
+<script src="/js/plugins/rotate/lg-rotate.umd.js"></script>
+
+<!-- 
+<script src="/js/plugins/pager/lg-pager.umd.js"></script>
+ -->
+
+<script src="/js/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+
+<!-- https://www.lightgalleryjs.com/docs/settings/  -->
+<script type="text/javascript">
+lightGallery(document.getElementById('selector1'), {
+    selector: '.item',
+    plugins: [lgZoom, lgThumbnail, lgRotate, lgFullscreen],
+    download: false,	//��ֹ����
+    mousewheel: true,   //������껻ҳ
+    Width: '1000px',
+});
+</script>
+
             <!-- Comments -->
             <div>
                 
@@ -338,8 +380,6 @@
 
 
 <!-- Gallery -->
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Disqus Comments -->
 

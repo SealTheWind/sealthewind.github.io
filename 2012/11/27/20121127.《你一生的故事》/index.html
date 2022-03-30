@@ -51,8 +51,8 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" type="text/css" rel="stylesheet" />
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.css">
 
     <!-- Google Analytics -->
     
@@ -114,7 +114,6 @@
 
 <!-- Main Content -->
 <section class="main clearfix">
-
     <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/blog/thumbnail/post_bg.jpg');">
         <div class="wrapper content_header clearfix">
             
@@ -142,6 +141,7 @@
             <!-- Gallery -->
             
 
+
             <!-- Content -->
             <h2 id="疼痛"><a href="#疼痛" class="headerlink" title="疼痛"></a>疼痛</h2><p>科学家们发现，我们的身体无时无刻不在预测下一刻即将发生什么事情，并通过预测的结果调节我们的感知器官。我们都有过类似的经历：某一天在喝茶，剪指甲，挖鼻孔的时候无意发现到自己手上有一处割痕、伤口，然后会纳闷这伤口是怎么来的，怎么会一点感觉都没有；奇特的是，本来一点痛觉都没有的伤口，在你发现它之后，它瞬间像是发威变疼了。我们的大脑基于现有的身体状况，重新预测，并且告诉自己：“你应该觉得痛了”。</p>
 <p>另一个经典的实验，把实验对象（被害者）的双手放在他们双眼看不到的地方，例如放在一个布袋里面，或者绑在他们背后。然后在他们面前放一个电视机，电视屏幕上播放的是一只正在被拍摄的手，研究者（施虐者）欺骗实验对象（被害者）称屏幕上这只手正是实验对象自己的手（实际上是一只别人的手，或者是橡胶制作的）。为了让实验对象信服，可以来一点温和的刺激：同时滴一滴水在电视屏幕拍到的那只手，与实验对象自己手上面，实验对象完全信以为电视屏幕上显示的正是自己的手了。接下来好玩的一幕就要上演了，当拿一根针去扎那只假手时，实验对象看到电视屏幕中的手被扎到，都露出疼痛的表情，声称自己真的被针扎到了，而且痛觉很真实（实际上他们的手在自己看不到的地方安全着呢）。</p>
@@ -164,6 +164,48 @@
 </div>
 
 
+
+
+
+<!-- jQuery -->
+
+<script src="/js/jquery.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+
+<script src="/js/lightgallery.umd.js"></script>
+
+
+<script src="/js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
+<script src="/js/plugins/zoom/lg-zoom.umd.js"></script>
+
+
+<script src="/js/plugins/rotate/lg-rotate.umd.js"></script>
+
+<!-- 
+<script src="/js/plugins/pager/lg-pager.umd.js"></script>
+ -->
+
+<script src="/js/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+
+<!-- https://www.lightgalleryjs.com/docs/settings/  -->
+<script type="text/javascript">
+lightGallery(document.getElementById('selector1'), {
+    selector: '.item',
+    plugins: [lgZoom, lgThumbnail, lgRotate, lgFullscreen],
+    download: false,	//��ֹ����
+    mousewheel: true,   //������껻ҳ
+    Width: '1000px',
+});
+</script>
 
             <!-- Comments -->
             <div>
@@ -211,8 +253,6 @@
 
 
 <!-- Gallery -->
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Disqus Comments -->
 

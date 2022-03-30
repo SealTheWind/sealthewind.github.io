@@ -85,8 +85,8 @@ Open Image
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" type="text/css" rel="stylesheet" />
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.css">
 
     <!-- Google Analytics -->
     
@@ -148,7 +148,6 @@ Open Image
 
 <!-- Main Content -->
 <section class="main clearfix">
-
     <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_125627-01.jpeg');">
         <div class="wrapper content_header clearfix">
             
@@ -231,6 +230,7 @@ Open Image
 </div>
             
 
+
             <!-- Content -->
             <p><a href="/img/photo/IMG_20200925_124758-01.jpeg" data-featherlight="image">Open Image</a><br>…or directly provide the link as the data-featherlight attribute:</p>
 <p><a href="#" data-featherlight="/img/photo/IMG_20200925_124758-01.jpeg">Open Image</a></p>
@@ -241,7 +241,7 @@ Open Image
 
 
 <div align="center">
-<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_125336-01.jpeg" style="height:1024px;"/>
+<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_125336-01.jpeg" style="height:50%;"/>
 </div><br/>
 
 <div align="center">
@@ -249,15 +249,15 @@ Open Image
 </div><br/>
 
 <div align="center">
-<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_130939-01.jpeg" style="height:1024px;"/>
+<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_130939-01.jpeg" style="height:50%;"/>
 </div><br/>
 
 <div align="center">
-<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200924_104527-01.jpeg" style="height:1024px;"/>
+<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200924_104527-01.jpeg" style="height:50%;"/>
 </div><br/>
 
 <div align="center">
-<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_131757-01.jpeg" style="height:1024px;"/>
+<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_131757-01.jpeg" style="height:50%;"/>
 </div><br/>
 <div align="center">
 <img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/IMG_20200925_132105-01.jpeg" style="width:1024px;"/>
@@ -265,7 +265,7 @@ Open Image
 
 
 <div align="center">
-<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/mmexport1601011981762-01.jpeg" style="height:1024px;"/>
+<img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/Hainan/mmexport1601011981762-01.jpeg" style="height:50%;"/>
 恰好遇到佛光
 </div>
 
@@ -278,6 +278,48 @@ Open Image
 </div>
 
 
+
+
+
+<!-- jQuery -->
+
+<script src="/js/jquery.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+
+<script src="/js/lightgallery.umd.js"></script>
+
+
+<script src="/js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
+<script src="/js/plugins/zoom/lg-zoom.umd.js"></script>
+
+
+<script src="/js/plugins/rotate/lg-rotate.umd.js"></script>
+
+<!-- 
+<script src="/js/plugins/pager/lg-pager.umd.js"></script>
+ -->
+
+<script src="/js/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+
+<!-- https://www.lightgalleryjs.com/docs/settings/  -->
+<script type="text/javascript">
+lightGallery(document.getElementById('selector1'), {
+    selector: '.item',
+    plugins: [lgZoom, lgThumbnail, lgRotate, lgFullscreen],
+    download: false,	//��ֹ����
+    mousewheel: true,   //������껻ҳ
+    Width: '1000px',
+});
+</script>
 
             <!-- Comments -->
             <div>
@@ -325,8 +367,6 @@ Open Image
 
 
 <!-- Gallery -->
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Disqus Comments -->
 
