@@ -10,8 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="很多人会觉得画图里面那个曲线工具很诡异，简单写写我的心得
-这就是传说中那个曲线工具">
+        <meta name="description" content="三角战略">
     
 
     <!--Author-->
@@ -21,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="用画图工具画曲线"/>
+        <meta property="og:title" content="三角战略"/>
     
 
     <!--Open Graph Site Name-->
@@ -34,7 +33,7 @@
 
     <!-- Title -->
     
-    <title>用画图工具画曲线 - Seal The Wind</title>
+    <title>三角战略 - Seal The Wind</title>
 
     <!-- Custom CSS -->
     
@@ -114,7 +113,7 @@
 
 <!-- Main Content -->
 <section class="main clearfix">
-    <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/blog/thumbnail/post_bg.jpg');">
+    <section class="top" style="background: url('https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/blog/thumbnail/tri.jpg');">
         <div class="wrapper content_header clearfix">
             
 
@@ -122,18 +121,18 @@
 
     <ul class="btn clearfix">
         
-	        <li><a href="/2012/08/11/20101217.%E7%94%A8%E7%94%BB%E5%9B%BE%E5%B7%A5%E5%85%B7%E4%BF%AE%E5%9B%BE/" class="previous" data-title="用画图工具修图"></a></li>
+	        <li><a href="/2022/04/23/20220423.%E5%8D%81%E4%B8%89%E6%9C%BA%E5%85%B5%E9%98%B2%E5%8D%AB%E5%9C%88/" class="previous" data-title="十三机兵防卫圈/程序/仙豆/毒/飞线"></a></li>
         
 
         <li><a href="/" class="grid" data-title="Home"></a></li>
 
         
-	        <li><a class="next disabled"></a></li>
+	        <li><a href="/2022/03/30/20220330.(CODA)%E8%A7%82%E5%BD%B1%E6%84%9F%E5%8F%97/" class="next" data-title="CODA观影感受"></a></li>
         
     </ul>
 
 </div><!-- end work_nav -->
-            <h1 class="title">用画图工具画曲线</h1>
+            <h1 class="title">三角战略</h1>
         </div>
     </section><!-- end top -->
 
@@ -145,40 +144,7 @@
 
 
             <!-- Content -->
-            <p>很多人会觉得画图里面那个曲线工具很诡异，简单写写我的心得</p>
-<p>这就是传说中那个曲线工具</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa01.jpg"></p>
-<span id="more"></span>
-<p>首先看一个曲线的例子：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa02.jpg"></p>
-<p>红色使用曲线工具画出来的，其余蓝色和黑色的线只是辅助讲解用的，实际画曲线的时候它们只要存在于大脑中就行了。<br>图中可以明显的看出，线段A-1和线段B-2是曲线的两根切线，也就是说，画一根曲线的时候，只需要确定曲线的两个端点的切线，曲线就会自动调整以适应这两根切线 (其实就是贝塞尔曲线)。</p>
-<p>接下来看画图里面一根曲线到底要怎么画：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa03.jpg"></p>
-<p>有一点与人们平常想法不同的地方，就是先有切线，再依切线生成的曲线XD，而不是先画个圆再在上面某点引出切线。有点像先有鸡蛋，再从这个鸡蛋推测是哪只鸡生下来的…………..</p>
-<p>从上，有一点已经确定，那就是曲线的弯曲是与切线的方向有关的，那切线的长度会对曲线的生成有什么影响？<br>看下图：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa04.jpg"></p>
-<p>可以很明显的看出，切线的长度越大，可以理解为对被相切的曲线的约束力也就越大，曲线与这条切线也就离得更近。(其实是与该直线相切的圆的直径越大)</p>
-<p>再看另一个例子</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa05.jpg"></p>
-<p>值得注意的是，曲线的起始点和结束点是很重要的，上面的例子中，如果把从A向B拉出一条线这一步骤改成从B向A拉出一条线，其余步骤不变，图像会有翻天覆地的变化，因为拉出线段确定切线的时候，第一次点击确定的是曲线起始点引出的切线。看图：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa06.jpg"></p>
-<p>该曲线的切线实际上变成了：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa07.jpg"></p>
-<p>OK，至此基本上都说明完毕了，可以确定mspaint里面画曲线的几大要素：起始点，结束点，引导曲线的两根切线，切线的方向，切线的长度</p>
-<p>随意再画几个实例：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa08.jpg"></p>
-<p>接下来看看怎么样画椭圆等封闭的曲线：</p>
-<p><img src="https://t-1310345571.cos.ap-guangzhou.myqcloud.com/img/mspaint/msa09.jpg"></p>
-<p>关键在于，这些都是有两条曲线构成，而曲线圆滑的关键是两根曲线对应的两组切线要在同一条直线上。</p>
-<p>于是乎，可以首先任意画两条直线，画曲线时再在其上取点。上面两个图的步骤：</p>
-<p>0）画两根直线(这两根直线必须实际地画出来，不能单单在脑中想象….可以画完再用油漆桶擦掉)</p>
-<p>1）从A点往B点拉出一条线</p>
-<p>2）在点1处点击鼠标左键</p>
-<p>3）再在点2处点击鼠标左键</p>
-<p>4）从A点往B点拉出第二条线</p>
-<p>5）在点3处点击鼠标左键</p>
-<p>6）再在点4处点击鼠标左键</p>
-<p>写了这么多，希望对这个有兴趣的人能看明白，也是为了防止自己一段时间不用全给忘了。</p>
+            <p>三角战略</p>
 
 
             <!-- Tags -->
@@ -186,7 +152,7 @@
 
 
 <div class="tags">
-    <a href="/tags/工具/">工具</a>
+    <a href="/tags/游戏/">游戏</a>
 </div>
 
 
@@ -241,7 +207,7 @@ lightGallery(document.getElementById('selector1'), {
 
 
 
-<span style="font-size:3px;color:#666666">2010-12-17&nbsp;posted</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size:3px;color:#666666">2022-04-10&nbsp;posted</span>&nbsp;&nbsp;&nbsp;
 <span id="busuanzi_container_site_pv" style="font-size:3px;color:#666666"><span id="busuanzi_value_page_pv"></span>&nbsp;views.</span>
 
 <!-- ������City�氲װ���� -->
