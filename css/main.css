@@ -562,7 +562,6 @@ h5, h6          { font-weight: bolder }
 }
 
 .content img{
-    margin-left: auto;
     margin-right: auto;
     display: block;
 }
