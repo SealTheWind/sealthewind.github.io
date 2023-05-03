@@ -565,10 +565,8 @@ h5, h6          { font-weight: bolder }
 }
 
 .content img{
-    margin-right: auto;
     display: block;
 }
-
 
 .content ol, .content ul{
     margin-left: 15px;
