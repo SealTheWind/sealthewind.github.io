@@ -1573,7 +1573,6 @@ figure.highlight.yml .number,
   perspective: 1000px;
 }
 
-
 @keyframes initAnimation {
   0% {
     transform: rotateY(0deg);
