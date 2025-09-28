@@ -1581,12 +1581,29 @@ figure.highlight.yml .number,
   }
 }
 
+.book-container {
+  display: flex;
+  align-items: 0;
+  justify-content: flex-start;
+  perspective: 600px;
+}
+
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-16deg);
+  }
+}
+
+/*  3D-BOOK  */
 .book {
   width: 200px;
   height: 300px;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateY(-24deg);
+  transform: rotateY(-16deg);
   transition: 1s ease;
   animation: 1s ease 0s 1 initAnimation;
 }
@@ -1604,7 +1621,7 @@ figure.highlight.yml .number,
   width: 200px;
   height: 300px;
   transform: translateZ(15px);
-  background-color: #01060f;
+  background-color: #ffffff;
   border-radius: 0 2px 2px 0;
   box-shadow: 5px 5px 20px #666;
 }
@@ -1651,7 +1668,7 @@ figure.highlight.yml .number,
   width: 200px;
   height: 300px;
   transform: translateZ(-15px);
-  background-color: #01060f;
+  background-color: #ffffff;
   border-radius: 0 2px 2px 0;
   box-shadow: -10px 0 50px 10px #666;
 }
