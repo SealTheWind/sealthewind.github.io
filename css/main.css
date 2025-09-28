@@ -1573,6 +1573,7 @@ figure.highlight.yml .number,
   perspective: 1000px;
 }
 
+
 @keyframes initAnimation {
   0% {
     transform: rotateY(0deg);
@@ -1584,7 +1585,7 @@ figure.highlight.yml .number,
 
 .book {
   width: 300px;
-  height: 450px;
+  height: 420px;
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(-28deg);
@@ -1603,7 +1604,7 @@ figure.highlight.yml .number,
   left: 0;
   background-color: red;
   width: 300px;
-  height: 450px;
+  height: 420px;
   transform: translateZ(15px);
   background-color: #fcfcfc;
   border-radius: 0 2px 2px 0;
@@ -1617,7 +1618,7 @@ figure.highlight.yml .number,
   left: 0;
   top: 1px;
   width: 28px;
-  height: 448px;
+  height: 418px;
   transform: translateX(284px) rotateY(90deg);
   background: linear-gradient(90deg, 
     #fff 0%,
@@ -1650,7 +1651,7 @@ figure.highlight.yml .number,
   left: 0;
   content: ' ';
   width: 300px;
-  height: 450px;
+  height: 420px;
   transform: translateZ(-15px);
   background-color: #fcfcfc;
   border-radius: 0 2px 2px 0;
