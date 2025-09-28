@@ -1567,7 +1567,7 @@ figure.highlight.yml .number,
 
 /*  3D-BOOK  */
 .book-container {
-  display: left;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   perspective: 1000px;
